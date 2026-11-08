@@ -8,9 +8,11 @@ Alain Connes raconte avoir rendu une copie presque blanche et avoir trouvé la s
 
 Aujourd’hui, GPT-6 Astra Pro résout ce problème en 20 minutes.
 
-[Voir la vidéo d’Axel Arno sur l’épreuve de 1966](https://www.youtube.com/watch?v=WQIEOBjTQ1o) · [Lire l’énoncé du concours](https://fr.scribd.com/document/603917743/ens-ulm-1966)
+[Voir la vidéo d’Axel Arno sur l’épreuve de 1966](https://www.youtube.com/watch?v=WQIEOBjTQ1o) · [Lire l’énoncé du concours](ens_ulm_1966_enonce.pdf)
 
 ## Contenu
+
+Le fichier `ens_ulm_1966_enonce.pdf` reproduit l’énoncé original, qui tient sur une page. Sa source `ens_ulm_1966_enonce.tex` est une transcription mot pour mot de [la copie publiée sur Scribd](https://fr.scribd.com/document/603917743/ens-ulm-1966).
 
 Le fichier `ens_ulm_1966_koszul.pdf` contient les trois parties de l'épreuve. Chacune des 13 questions est suivie de sa résolution pas à pas.
 
@@ -23,4 +25,5 @@ Après avoir extrait l'archive, ouvrez un terminal dans le dossier des fichiers 
 ```sh
 pdflatex ens_ulm_1966_koszul.tex
 pdflatex ens_ulm_1966_koszul.tex
+pdflatex ens_ulm_1966_enonce.tex
 ```

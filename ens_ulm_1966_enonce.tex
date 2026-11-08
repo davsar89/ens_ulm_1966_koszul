@@ -1,0 +1,65 @@
+% Énoncé original du problème de Koszul, ENS Ulm, juin 1966.
+% Transcription mot pour mot de la page (une seule) publiée sur Scribd :
+% https://fr.scribd.com/document/603917743/ens-ulm-1966
+% Les tournures et la ponctuation de l'original sont conservées
+% (par exemple « rang 2. » à la question I-3).
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb}
+\usepackage[a4paper,left=20mm,right=20mm,top=18mm,bottom=18mm]{geometry}
+\pagestyle{empty}
+
+\newcommand{\partie}[1]{\par\bigskip\centerline{#1}\medskip}
+\newcommand{\q}[1]{\par\smallskip\noindent#1\textsuperscript{o})}
+
+\begin{document}
+
+\centerline{\large Concours d'entrée à l'ENS Ulm, juin 1966}
+\bigskip
+
+On désigne par $E$ un espace vectoriel euclidien de dimension 3 et on note $(x|y)$ le produit scalaire de deux vecteurs appartenant à $E$. On désigne par $u$ un vecteur unitaire de $E$ et par $\sigma$ la symétrie qui transforme tout élément $x\in E$ en $\sigma(x)=x-2(x|u)u$.
+
+Soit $\Omega$ l'ensemble des $x\in E$ tels que $(x|\sigma(x))\leq0$ et $(x|u)\geq0$. On désigne par $N$ l'ensemble des endomorphismes $\alpha$ de $E$ tels que $\alpha(\Omega)\subset\Omega$ et par $N_+$ l'ensemble des endomorphismes de la forme $\beta+\gamma$, où $\beta$ et $\gamma$ sont deux éléments de $N$ linéairement indépendants dans l'espace des endomorphismes de $E$. On dira qu'un endomorphisme de $E$ est \emph{extrémal} s'il appartient à $N$ et n'appartient pas à $N_+$.
+
+\partie{I}
+
+\q1 Comparer $\Omega$ et l'ensemble des éléments $y\in E$ tels que $(y|x)\geq0$ pour tout $x\in\Omega$.
+
+\q2 Déterminer les endomorphismes extrémaux de rang $\leq1$.
+
+\q3 Existe-t-il des endomorphismes extrémaux de rang 2.
+
+\q4 L'endomorphisme identité est-il extrémal~?
+
+\q5 Soit $\alpha$ un endomorphisme de $E$ tel que $\alpha(\Omega)=\Omega$ et soit $\beta$ un endomorphisme extrémal. Les endomorphismes composés $\alpha\circ\beta$ et $\beta\circ\alpha$ sont-ils extrémaux~? l'endomorphisme $\alpha$ est-il extrémal~?
+
+\partie{II}
+
+\q1 Soit $y$ un élément de $E$ non nul et soit $m=(y|\sigma(y))$. Pour tout nombre réel $t$, on désigne par $\alpha_{t,y}$ l'endomorphisme de $E$ tel que
+\[
+  \alpha_{t,y}(x)=x+\left(\int_0^t e^{m\vartheta}\,d\vartheta\right)(x|\sigma(y))\,y
+\]
+pour tout $x\in E$. Montrer que, quel que soit $t$, $\alpha_{t,y}$ est de rang 3 et calculer l'endomorphisme inverse.
+
+\q2 Déterminer les valeurs de $t$ pour lesquelles $\alpha_{t,y}\in N$ ainsi que les valeurs de $t$ pour lesquelles $\alpha_{t,y}\in N_+$.
+
+\q3 Montrer que si $\alpha_{t,y}\in N$, alors $\alpha_{t,y}$ est somme d'un nombre fini d'endomorphismes extrémaux.
+
+\q4 Soit $P$ le plan, ensemble des $x\in E$ tels que $(x|u)=1$, et soit $S$ une ellipse du plan $P$ contenue dans $\Omega$. Montrer que si $S$ n'est pas le cercle de centre $u$ et de rayon 1 du plan $P$, alors il existe un $y\in E$, différent de zéro, et un nombre réel $t$ tel que $\alpha_{t,y}\in N_+$ et $S\subset\alpha_{t,y}(\Omega)$.
+
+\partie{III}
+
+\q1 Soient $\alpha$ et $\beta$ deux endomorphismes de $E$ tels que
+\[
+  \beta(\Omega)\subset\alpha(\Omega)\subset\Omega
+\]
+Montrer que si $\beta$ est de rang 3 et si $\alpha\in N_+$, alors $\beta\in N_+$.
+
+\q2 Déterminer les endomorphismes extrémaux de rang 3 (on utilisera les résultats de II). Le composé de deux endomorphismes extrémaux (de rang quelconque) est-il un endomorphisme extrémal~?
+
+\q3 Tout endomorphisme de $E$ appartenant à $N$ est-il la somme d'un nombre fini d'endomorphismes extrémaux~? (on pourra commencer par étudier le cas d'un endomorphisme $\alpha\in N$ de rang 3 tel que l'intersection de $\alpha(\Omega)$ et du plan $P$ défini en II-4) soit un cercle et son intérieur~; on montrera que, dans ce cas, il existe un $z\in\Omega$ tel que $\alpha(\Omega)$ soit l'image de $\Omega$ par l'endomorphisme qui transforme tout $x\in E$ en $x+(x|u)z$).
+
+\q4 L'endomorphisme $\gamma$ de $E$ défini par $\gamma(x)=-x+\frac52(x|u)u$ est-il la somme d'un nombre fini d'endomorphismes extrémaux de rang 1~?
+
+\end{document}
